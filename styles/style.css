@@ -1,0 +1,124 @@
+body{
+    background-color:#E5E5E5 ;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+main{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+.container{
+    width: 870px;
+    background-color: #ffff;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.top{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+
+}
+.top-players{
+    margin-bottom: 30px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.blog-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blogs{
+    display: flex;
+}
+.thumnil img{
+    width: 224px;
+    height: 127px;
+}
+.blog-info{
+    margin-left: 16px;
+
+}
+.blog-info a{
+    text-decoration: none;
+    color: #562EFF;
+}
+.blog-info p{
+    color: #9F9F9F;
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.author-name{
+    color: #ED6B4F;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+    
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.product{
+    display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 25px;
+}
+/* mobile devices */
+@media (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blog-part, .product{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blogs{
+        flex-direction: column;
+    }
+    .product{
+        row-gap: 30px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .product{
+        grid-template-columns: repeat(2,1fr);  
+    }
+   .blog-part{
+       grid-template-columns: repeat(1,1fr);
+   }
+}
